@@ -3,16 +3,14 @@
 // %%%%%%%%%%%%%%%%%%%%%%%% 
 
 // axios summons (from /node_modules/axios/ ??)
-import axios from 'axios'; // ! mi trovo dove? 
+import axios from 'axios'; // ! lo vede, ma come?
 
 const BASE_URL = 'https://pokeapi.co/api/v2/';
 
-// nuove proprietà di Vue
+// plug axios related properties into Vue
 export default {
 	install(Vue) {
-		// axios come proprietà di Vue (this.axios)
 		Vue.prototype.axios = axios;
-		// base_url come proprietà di Vue (this.base_url)
 		Vue.prototype.base_url = BASE_URL;
 	}
 }

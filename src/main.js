@@ -11,11 +11,11 @@ import App from "./App.vue"; // ! mi trovo dove sta main.js: /pokemon-vue/src/
 // # AUX TOOLS summons # 
 import AxiosPlugin from "./plugins/AxiosPlugin"; // ! mi trovo dove sta main.js: /pokemon-vue/src/
 
-// # ROOT SETTINGS # 
-Vue.config.productionTip = false;
-
 // # AUX TOOLS activation # 
 Vue.use(AxiosPlugin);
+
+// # FRAMEWORK SETTINGS # 
+Vue.config.productionTip = false;
 
 // # FRAMEWORK & ROOT COMPONENT activation # 
 new Vue({
@@ -24,12 +24,13 @@ new Vue({
 
 // alert('cicio no xe per barca');
 
-
-/***********************************************************************************************
- *
- * 	MAIN JS	{import}	<---	Vue
- *			{import}	<---	{export} AxiosPlugin {import}	<--- 	axios
- *			{import}	<---	{export} App.vue {import}		<--- 	bootstrap
- *												 {import}		<---	{export} Pokemon.vue
- *
- ***********************************************************************************************/
+/*
+|---------------------------------------------------------------------------------------------------|
+|																									|
+| 	main.js	{import}	<---	Vue																	|
+|			{import}	<---	{export} AxiosPlugin.js {import}	<--- 	axios					|
+|			{import}	<---	{export} App.vue {import}			<--- 	bootstrap				|
+|												 {import}			<---	{export} Pokemon.vue	|
+|																									|
+|---------------------------------------------------------------------------------------------------|
+*/

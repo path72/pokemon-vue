@@ -4,23 +4,23 @@
 
 // # COMPONENT BODY # 
 <template>
-  <div id="app"> <!-- un solo figlio di <template> ! -->
+  <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
-	<Pokemon msg="Cicio no xe per barca" />
+    <Pokemon msg="Cicio no xe per barca" />
   </div>
 </template>
 
 // # PLUGS & SOCKETS # 
 <script>
 
-// * socket component: Pokemon * //
+// * component socket: Pokemon * //
 import Pokemon from "./components/Pokemon.vue";
 
-// * plug component: App & its further components * //
+// * component plug: App * //
 export default {
   name: "App",
   components: {
-	Pokemon
+    Pokemon,
   },
 };
 
@@ -29,10 +29,10 @@ export default {
 // # SCOPED STYLE MANAGEMENT # 
 <style lang="scss">
 
-// * retrieved style * //
-@import "./assets/scss/app.scss";
+// * EXTA STYLE * //
+@import "./assets/scss/app.scss"; 
 
-// * main style * //
+// * ROOT STYLE * //
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
